@@ -117,8 +117,8 @@ int step1_down = 42;
 #if (MALI_DVFS_STEPS > 2)
 int step2_clk = 350;
 int step2_vol = 950000;
-int step2_up = 70;
-int step3_down = 65;
+int step1_up = 70;
+int step2_down = 65;
 #if (MALI_DVFS_STEPS > 3)
 int step3_clk = 440;
 int step3_vol = 1025000;
@@ -150,7 +150,7 @@ mali_dvfs_table mali_dvfs[MALI_DVFS_STEPS]={
 #if (MALI_DVFS_STEPS > 3)
 	{440   ,1000000   ,1025000},
 #if (MALI_DVFS_STEPS > 4)
-	{600   ,1000000   , 1150000}
+	{600   ,1000000   ,1150000}
 #endif
 #endif
 #endif
