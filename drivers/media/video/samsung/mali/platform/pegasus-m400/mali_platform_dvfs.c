@@ -77,7 +77,7 @@ mali_dvfs_step step[MALI_DVFS_STEPS]={
 #if (MALI_DVFS_STEPS > 3)
 	/*step 3 clk*/ {440,  1025000},
 #if (MALI_DVFS_STEPS > 4)
-	/*step 4 clk*/ {600,  1150000}
+	/*step 4 clk*/ {633,  1150000}
 #endif
 #endif
 #endif
@@ -101,7 +101,7 @@ mali_dvfs_staycount_table mali_dvfs_staycount[MALI_DVFS_STEPS]={
 };
 
 /* dvfs information */
-// L0 = 600Mhz, 1.075V
+// L0 = 633Mhz, 1.075V
 // L1 = 440Mhz, 1.025V
 // L2 = 350Mhz, 0.95V
 // L3 = 266Mhz, 0.90V
@@ -125,7 +125,7 @@ int step3_vol = 1025000;
 int step2_up = 75;
 int step3_down = 70;
 #if (MALI_DVFS_STEPS > 4)
-int step4_clk = 600;
+int step4_clk = 633;
 int step4_vol = 1150000;
 int step3_up = 80;
 int step4_down = 75;
@@ -139,7 +139,7 @@ mali_dvfs_table mali_dvfs_all[MAX_MALI_DVFS_STEPS]={
 	{266   ,1000000   ,  900000},
 	{350   ,1000000   ,  950000},
 	{440   ,1000000   , 1025000},
-	{600   ,1000000   , 1150000} };
+	{633   ,1000000   , 1150000} };
 
 mali_dvfs_table mali_dvfs[MALI_DVFS_STEPS]={
 	{160   ,1000000   , 875000},
@@ -150,7 +150,7 @@ mali_dvfs_table mali_dvfs[MALI_DVFS_STEPS]={
 #if (MALI_DVFS_STEPS > 3)
 	{440   ,1000000   ,1025000},
 #if (MALI_DVFS_STEPS > 4)
-	{600   ,1000000   ,1150000}
+	{633   ,1000000   ,1150000}
 #endif
 #endif
 #endif
@@ -211,7 +211,7 @@ static unsigned int asv_3d_volt_9_table_for_prime[MALI_DVFS_STEPS][ASV_LEVEL] = 
 #if (MALI_DVFS_STEPS > 3)
 	{ 1087500, 1075000, 1062500, 1050000, 1037500, 1025000, 1012500, 1000000, 1012500, 1000000,  987500,  975000},	/* L1(440Mhz) */
 #if (MALI_DVFS_STEPS > 4)
-	{ 1150000, 1137500, 1125000, 1112500, 1100000, 1087500, 1075000, 1062500, 1087500, 1075000, 1062500, 1050000},	/* L0(600Mhz) */
+	{ 1150000, 1137500, 1125000, 1112500, 1100000, 1087500, 1075000, 1062500, 1087500, 1075000, 1062500, 1050000},	/* L0(633Mhz) */
 #endif
 #endif
 #endif
